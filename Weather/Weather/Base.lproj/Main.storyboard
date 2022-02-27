@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_weather" translatesAutoresizingMaskIntoConstraints="NO" id="s0b-Px-fKi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Москва" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TK7-E7-Rzc">
+                                <rect key="frame" x="85.5" y="92" width="243" height="69"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Погодные условия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQH-f6-BV5">
+                                <rect key="frame" x="76" y="191" width="262" height="35"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v03-70-odq">
+                                <rect key="frame" x="150.5" y="261" width="113" height="80"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="70"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsy-8e-dZl">
+                                <rect key="frame" x="265" y="261" width="73" height="80"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="s0b-Px-fKi" secondAttribute="bottom" id="5F9-kp-iZg"/>
+                            <constraint firstItem="TK7-E7-Rzc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TpB-zh-kdt"/>
+                            <constraint firstItem="YQH-f6-BV5" firstAttribute="top" secondItem="TK7-E7-Rzc" secondAttribute="bottom" constant="30" id="Yzq-tr-VkV"/>
+                            <constraint firstItem="lsy-8e-dZl" firstAttribute="top" secondItem="YQH-f6-BV5" secondAttribute="bottom" constant="35" id="di9-zf-nLo"/>
+                            <constraint firstItem="v03-70-odq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f7T-hh-nEK"/>
+                            <constraint firstItem="s0b-Px-fKi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gG7-j4-NYc"/>
+                            <constraint firstItem="TK7-E7-Rzc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="gOm-P4-0CE"/>
+                            <constraint firstItem="YQH-f6-BV5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oDS-vT-Trp"/>
+                            <constraint firstAttribute="trailing" secondItem="s0b-Px-fKi" secondAttribute="trailing" id="oQO-FO-ScF"/>
+                            <constraint firstItem="v03-70-odq" firstAttribute="top" secondItem="YQH-f6-BV5" secondAttribute="bottom" constant="35" id="qBm-4d-CNL"/>
+                            <constraint firstItem="lsy-8e-dZl" firstAttribute="leading" secondItem="v03-70-odq" secondAttribute="trailing" constant="1.5" id="vEI-4I-Ttd"/>
+                            <constraint firstItem="s0b-Px-fKi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yZz-LK-FxC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="TK7-E7-Rzc" id="wIN-lm-pdE"/>
+                        <outlet property="temperatureLabel" destination="v03-70-odq" id="lKJ-wt-Nyq"/>
+                        <outlet property="weatherDescriptionLabel" destination="YQH-f6-BV5" id="csZ-x9-RIy"/>
+                        <outlet property="weatherIconImageView" destination="lsy-8e-dZl" id="UFt-tw-cnR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_weather" width="750" height="1334"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
